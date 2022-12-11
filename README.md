@@ -12,6 +12,7 @@
 
 | 版 | ページ | 該当箇所 | 誤 | 正 |
 | --- | --- | --- | --- | --- |
-| 例 | p.47 | 上段コードブロック６行目 | ax.set_title('step_size = 0.01') | ax.set_title('step_size = 10.0') |
-| 例 | p.47 | 上段コードブロック11行目 | ax.set_title('step_size = 10.0') | ax.set_title('step_size = 0.01') |
-| 例 | p.48 | 図 1.10 | 上段のプロットのタイトル: step_size=0.01, 中段のプロットのタイトル： step_size=10.0 | 上段のプロットのタイトル: step_size=10.0, 中段のプロットのタイトル： step_size=0.01 |
+| 第4刷まで | p.43 | 下段コードブロック5, 6行目 | # 撹乱項 $\varepsilon$ は平均0の一様分布に従うとする<br>`x_proposal = x_current + step_size * np.random.uniform(-1, 1)` | # 撹乱項 $\varepsilon$ は平均0の正規分布に従うとする<br>`x_proposal = x_current + step_size * np.random.randn()`<br>*これに伴い図1.7~図1.13の見た目も微妙に変更あり |
+| 第4刷まで | p.47 | 上段コードブロック６行目 | `ax.set_title('step_size = 0.01')` | `ax.set_title('step_size = 10.0')` |
+| 第4刷まで | p.47 | 上段コードブロック11行目 | `ax.set_title('step_size = 10.0')` | `ax.set_title('step_size = 0.01')` |
+| 第4刷まで | p.48 | 図 1.10 | 上段のプロットのタイトル: step_size=0.01<br>中段のプロットのタイトル: step_size=10.0 | 上段のプロットのタイトル: step_size=10.0<br>中段のプロットのタイトル: step_size=0.01 |
